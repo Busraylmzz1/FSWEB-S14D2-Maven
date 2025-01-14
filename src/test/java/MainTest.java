@@ -28,6 +28,7 @@ public class MainTest {
 
     @BeforeEach
     void setUp() {
+        Object LampType;
         lamp = new Lamp(LampType.NORMAL, true, 80);
         bed = new Bed("Çift Kişilik", 4, 1, 2, 2);
         wardrobe = new Wardrobe(2, 4, 40);
