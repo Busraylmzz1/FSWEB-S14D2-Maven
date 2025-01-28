@@ -2,11 +2,11 @@ package org.example.model;
 
 import org.example.model.enums.PaintColor;
 
-public class Celling {
+public class Ceiling {
     private int height;
     private PaintColor color;
 
-    public Celling(int height, PaintColor color) {
+    public Ceiling(int height, PaintColor color) {
         this.height= height;
         this.color= color;
     }

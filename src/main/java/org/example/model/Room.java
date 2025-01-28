@@ -8,24 +8,24 @@ public class Room  {
     private Wall wall2;
     private Wall wall3;
     private Wall wall4;
-    private Celling celling;
+    private Ceiling ceiling;
     private Lamp lamp;
     private Carpet carpet;
-    public Room(Wall wall1, Wall wall2, Wall wall3, Wall wall4, Celling celling, Lamp lamp,Carpet carpet){
+    public Room(Wall wall1, Wall wall2, Wall wall3, Wall wall4, Ceiling ceiling, Lamp lamp, Carpet carpet){
         this.wall1=wall1;
         this.wall2=wall2;
         this.wall3=wall3;
         this.wall4=wall4;
-        this.celling=celling;
+        this.ceiling = ceiling;
         this.lamp=lamp;
         this.carpet=carpet;
     }
-    public Room(Wall wall1, Wall wall2, Wall wall3, Wall wall4, Celling celling, Lamp lamp){
+    public Room(Wall wall1, Wall wall2, Wall wall3, Wall wall4, Ceiling ceiling, Lamp lamp){
         this.wall1=wall1;
         this.wall2=wall2;
         this.wall3=wall3;
         this.wall4=wall4;
-        this.celling=celling;
+        this.ceiling = ceiling;
         this.lamp=lamp;
 
     }
@@ -44,8 +44,8 @@ public class Room  {
     public Wall getWall4(){
         return wall4;
     }
-    public Celling getCelling(){
-        return celling;
+    public Ceiling getCelling(){
+        return ceiling;
     }
     public Lamp getLamp(){
         return lamp;
@@ -62,7 +62,7 @@ public class Room  {
                 ", wall2=" + wall2 +
                 ", wall3=" + wall3 +
                 ", wall4=" + wall4 +
-                ", celling=" + celling +
+                ", celling=" + ceiling +
                 ", lamp=" + lamp +
                 ", carpet=" + carpet +
                 '}';
