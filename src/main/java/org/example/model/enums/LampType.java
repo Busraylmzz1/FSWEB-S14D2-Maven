@@ -1,7 +1,5 @@
 package org.example.model.enums;
 
 public enum LampType {
-    NORMAL,
-    NEON,
-    LAVA,
+    NORMAL, NEON, LED, HALOGEN
 }
