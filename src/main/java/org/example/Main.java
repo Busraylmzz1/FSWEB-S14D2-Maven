@@ -1,20 +1,24 @@
 package org.example;
 
 import org.example.model.*;
+import org.example.model.enums.LampType;
+import org.example.model.enums.PaintColor;
 
 public class Main {
     public static void main(String[] args) {
-        Lamp lamp= new Lamp(100, true, LampType.NORMAL);
-        Celling celling= new Celling(30, PaintColor.WHİTE);
-        Bed bed = new Bed("double", 2,2,2,2);
-        Wall northWall= new Wall("north");
+        Lamp lamp= new Lamp(LampType.NEON, true,100);
+        Celling celling= new Celling(3, PaintColor.RED);
+        Bed bed= new Bed("double",2 ,2,2,2);
+        Wall northwall= new Wall("North");
         Wall eastWall = new Wall("East");
-        Wall westWall = new Wall("West");
+        Wall westWall= new Wall("West");
         Wall southWall = new Wall("South");
-        Wall[] walls = new Wall[]{northWall,eastWall,southWall,westWall};
-        Bedroom bedroom = new Bedroom( "bedroom1", northWall, eastWall, westWall, southWall,celling, bed,lamp, new Wardrobe(2, 3, 4), new Carpet(2,5,PaintColor.RED));
+        Wall[] walls= new  Wall[]{northwall,eastWall,westWall,southWall};
+        Bedroom bedroom= new Bedroom(northwall,eastWall,westWall,southWall,celling,lamp,new Carpet(2,3,PaintColor.RED),
+                "bedroom1", bed,new Wardrobe(1,2,100));
+        bedroom.createBedroom();
 
-       // bedroom.createBedroom; burdayımmmm
+
     }
 
 }

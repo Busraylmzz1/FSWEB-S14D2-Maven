@@ -1,5 +1,7 @@
 package org.example.model;
 
+import org.example.model.enums.PaintColor;
+
 public class Celling {
     private int height;
     private PaintColor color;
