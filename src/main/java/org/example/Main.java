@@ -6,7 +6,7 @@ import org.example.model.enums.PaintColor;
 
 public class Main {
     public static void main(String[] args) {
-        Lamp lamp= new Lamp(LampType.NORMAL, true,100);
+        Lamp lamp= new Lamp(LampType.NEON, true,100);
         Ceiling ceiling = new Ceiling(3, PaintColor.RED);
         Bed bed= new Bed("double",2 ,2,2,2);
         Wall northwall= new Wall("North");
